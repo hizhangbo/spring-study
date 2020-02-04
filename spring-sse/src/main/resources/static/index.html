@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+    var sse = new EventSource("SSE");
+    sse.onmessage=function(e){
+      console.log("message",e.data,e);
+    }
+
+    sse.addEventListener("hello", function(e){
+      console.log("hello event",e.data,e);
+      if(e.data == 6){
+        sse.close();
+      }
+    });
+
+</script>
+</body>
+</html>
