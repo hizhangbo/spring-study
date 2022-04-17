@@ -1,0 +1,2 @@
+org.springframework.context.ApplicationContextInitializer=io.github.hizhangbo.ext.Ext0ApplicationContextInitializer
+org.springframework.context.ApplicationListener=io.github.hizhangbo.ext.Ext1ApplicationListener
